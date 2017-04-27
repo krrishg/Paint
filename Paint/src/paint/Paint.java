@@ -49,7 +49,7 @@ public class Paint extends JFrame implements MouseListener,MouseMotionListener,A
 
     @Override
     public void mouseDragged(MouseEvent me) {
-        Graphics g = getGraphics();
+        Graphics g = panel.getGraphics();
         g.setColor(color);
         g.drawLine(p1,p2,me.getX(), me.getY());
         p1 = me.getX();
